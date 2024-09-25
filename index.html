@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Web Pertemuan 2</title>
+    </head>
+    <body>
+        <!-- ini untuk uppercase-->
+        Hello <u>World</u> <br>
+        Nama saya <b>Jelita</b> Priskila
+
+        <br>
+        <br>
+        <img src="jelt.png" width="200px">
+        <p>
+            Tempat Lahir saya di <i>Banjarmasin</i>
+        </p>
+        <p>
+            <b><i><u>ini campur bold italic underline</u></i></b>
+        </p>
+        <p style="color :red; font-size: 24; font-family: 'Trebuchet MS';">
+            ini text berwarna
+        </p>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <a href="http://google.com" target="_blank">ini menuju google</a>
+        <br><br>
+        Yang mau nitip kopi
+        <ul style="list-style-type: lower-latin;">
+            <li>Jel:kopi susu</li>
+            <li>Pris:Americano</li>
+            <li>Mw: coklat</li>
+        </ul>
+
+        <table border="1" width="100%" style="text-align: center;">
+            <tr height="100px">
+                <td>Saya<br>
+                    <img src="jelt.png" width="200px">
+                </td>
+                <td>baris 1 kolom b</td>
+                <td>baris 1 kolom c</td>
+            </tr>
+            <tr>
+                <td>baris 2 kolom a</td>
+                <td>baris 2 kolom b</td>
+                <td>baris 2 kolom c</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td colspan="2">hasil dimerge</td>
+            </tr>
+            <tr>
+                <td rowspan="2">merge</td>
+                <td>5</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>6</td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+        <form action="save.html">
+            <input type="text" placeholder="input nama: "><br>
+            <input type="number" placeholder="input umur: "><br>
+            <input type="password" placeholder="input password: "><br>
+            <textarea placeholder="input alamat" rows="5"></textarea>
+            <br>
+            <input type="radio" id="laki-laki" name="jenis kelamin">
+            <label for="laki-laki">laki-laki</label>
+            <input type="radio" id="perempuan" name="jenis kelamin">
+            <label for="perempuan">perempuan</label><br>
+
+            <select>
+                <option value="laki-laki">laki-laki</option>
+                <option value="perempuan">perempuan</option>
+            </select>
+            <button type="submit">Save</button>
+            <button type="button" onclick="alert('anda batal');">Batal</button>
+        </form>
+    </body>
+</html>
