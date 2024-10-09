@@ -1,85 +1,135 @@
-<html>
-    <head>
-        <title>Web Pertemuan 2</title>
-    </head>
-    <body>
-        <!-- ini untuk uppercase-->
-        Hello <u>World</u> <br>
-        Nama saya <b>Jelita</b> Priskila
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelita Priskila Mauwilik CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .left, .right {
+            flex: 1;
+            padding: 20px;
+        }
+        .left {
+            border-right: 2px solid #ddd;
+        }
+        .photo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .photo img {
+            width: 113px;
+            height: 151px;
+            border-radius: 100%;
+            border: 4px solid #ddd;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #E3AC49;
+        }
+        .content-box {
+            margin-bottom: 30px;
+        }
+        .description {
+            text-align: justify;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .info {
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+        }
+        .contact {
+            margin-top: 20px;
+        }
+        .contact p {
+            margin: 5px 0;
+        }
+        .right ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .right ul li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .skills-list {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
 
-        <br>
-        <br>
-        <img src="jelt.png" width="200px">
-        <p>
-            Tempat Lahir saya di <i>Banjarmasin</i>
-        </p>
-        <p>
-            <b><i><u>ini campur bold italic underline</u></i></b>
-        </p>
-        <p style="color :red; font-size: 24; font-family: 'Trebuchet MS';">
-            ini text berwarna
-        </p>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <a href="http://google.com" target="_blank">ini menuju google</a>
-        <br><br>
-        Yang mau nitip kopi
-        <ul style="list-style-type: lower-latin;">
-            <li>Jel:kopi susu</li>
-            <li>Pris:Americano</li>
-            <li>Mw: coklat</li>
-        </ul>
+    <div class="container">
+        <div class="left">
+            <div class="photo">
+                <img src="jelt.png" alt="Jelita Priskila Mauwilik">
+            </div>
+            <div class="info">
+                <p>JELITA PRISKILA MAUWILIK</p>
+                <p>12022200109</p>
+            </div>
+            <div class="content-box">
+                <div class="section-title">Tentang Saya</div>
+                <div class="description">
+                    Saya, Jelita Priskila Mauwilik, mahasiswa aktif di Telkom University jurusan Sistem Informasi dan saat ini berada di semester 5. Saya ingin mengambil kesempatan untuk belajar lebih dan menggali pengalaman yang dapat memperkaya perjalanan pendidikan saya dan karir saya ke depannya.
+                </div>
+            </div>
+            <div class="content-box contact">
+                <div class="section-title">Contact</div>
+                <p>Email: jelita.net0428@gmail.com</p>
+                <p>Phone: +628-1350-483636</p>
+                <p>Instagram: jelitt</p>
+            </div>
+        </div>
 
-        <table border="1" width="100%" style="text-align: center;">
-            <tr height="100px">
-                <td>Saya<br>
-                    <img src="jelt.png" width="200px">
-                </td>
-                <td>baris 1 kolom b</td>
-                <td>baris 1 kolom c</td>
-            </tr>
-            <tr>
-                <td>baris 2 kolom a</td>
-                <td>baris 2 kolom b</td>
-                <td>baris 2 kolom c</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td colspan="2">hasil dimerge</td>
-            </tr>
-            <tr>
-                <td rowspan="2">merge</td>
-                <td>5</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>6</td>
-            </tr>
-        </table>
+        <div class="right">
+            <div class="content-box">
+                <div class="section-title">Pendidikan</div>
+                <ul>
+                    <li><strong>Jurusan Teknik Komputer dan Jaringan</strong><br> SMK Telkom Banjarbaru (2019-2022)</li>
+                    <li><strong>S1 Sistem Informasi</strong><br> Telkom University (2022-Sekarang)</li>
+                </ul>
+            </div>
 
-        <br>
-        <br>
-        <form action="save.html">
-            <input type="text" placeholder="input nama: "><br>
-            <input type="number" placeholder="input umur: "><br>
-            <input type="password" placeholder="input password: "><br>
-            <textarea placeholder="input alamat" rows="5"></textarea>
-            <br>
-            <input type="radio" id="laki-laki" name="jenis kelamin">
-            <label for="laki-laki">laki-laki</label>
-            <input type="radio" id="perempuan" name="jenis kelamin">
-            <label for="perempuan">perempuan</label><br>
+            <div class="content-box">
+                <div class="section-title">Pengalaman</div>
+                <ul>
+                    <li>Praktek Kerja Lapangan selama 3 bulan di PT PLN ULP Banjarbaru</li>
+                    <li>Juara 1 Lomba Debat Ekonomi Tingkat SMA/Sederajat se-Kalsel</li>
+                    <li>Sertifikasi Junior Network Administrator BNSP</li>
+                </ul>
+            </div>
 
-            <select>
-                <option value="laki-laki">laki-laki</option>
-                <option value="perempuan">perempuan</option>
-            </select>
-            <button type="submit">Save</button>
-            <button type="button" onclick="alert('anda batal');">Batal</button>
-        </form>
-    </body>
+            <div class="content-box">
+                <div class="section-title">Kemampuan</div>
+                <ul class="skills-list">
+                    <li>Time Management</li>
+                    <li>Communication</li>
+                    <li>Adaptability</li>
+                    <li>Teamwork</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>
